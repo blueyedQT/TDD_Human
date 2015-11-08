@@ -18,6 +18,7 @@ RSpec.describe Human do
 			expect(@human.health).to eq(100)
 		end
 	end
+
 	describe "attributes" do 
 		before do 
 			@human = Human.new
@@ -39,6 +40,7 @@ RSpec.describe Human do
 			expect(@human.health).to eq(0)
 		end
 	end
+	
 	describe "behavior" do 
 		before do 
 			@human1 = Human.new
