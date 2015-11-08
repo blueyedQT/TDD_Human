@@ -10,12 +10,12 @@ RSpec.describe Wizard do
 		wizard = Wizard.new
 		wizard.health = 0
 		wizard.heal
-		expec(wizard.health)to eq(10)
+		expect(wizard.health).to eq(10)
 	end
 
 	it "has a default health of 50 and intelligence of 25" do 
 		wizard = Wizard.new
 		expect(wizard.health).to eq(50)
-		expecct(wizard.intelligence).to eq(25)
+		expect(wizard.intelligence).to eq(25)
 	end
 end
