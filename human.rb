@@ -10,10 +10,11 @@ class Human
 
 	def attack(object)
 		if object.instance_of? Human
+		# if object.class.ancestors.include?(Human)
 			object.health -= 10
-			return true
+			true
 		else
-			return false
+			false
 		end
 	end
 end
